@@ -2,17 +2,17 @@
 
 
 
-#### 1\. Introduction \& Contexte (WatsonIA)
+#### 1\. Introduction \& Contexte (WatsonIA) ==> LISA \& CYPRIEN
 
 
 
 Rédiger l’introduction du projet, le contexte du dataset IBM, les enjeux du cold start, et la méthodologie suivie.
 
-Présenter la problématique métier (fraude bancaire), les données disponibles et les contraintes.
+Présenter la problématique métier (fraude bancaire), les données disponibles et les contraintes. ??
 
 
 
-#### 2\. Data Exploration (EDA)
+#### 2\. Data Exploration (EDA) ==> HIBA
 
 
 
@@ -27,22 +27,24 @@ Explorer les fichiers (transactions\_train.csv, cards\_data.csv, users\_data.csv
 
 
 
-#### 3\. Data Preparation (Feature Engineering)
+#### 3\. Data Preparation (Feature Engineering) ==> HIBA \& LISA
 
 
 
-* Nettoyer, fusionner et enrichir les données avec des variables dérivées (montant log-transformé, heure, jour, week-end, MCC encodé, etc.). | Nettoyer les NaN et doublons
+* Nettoyer, fusionner et enrichir les données avec des variables dérivées (montant log-transformé, heure, jour, week-end, MCC encodé, etc.).
+* Nettoyer les NaN et doublons
 * Créer de nouvelles features pertinentes
 * Garantir qu’il n’y ait aucune fuite de données (no leakage)
 * Script data\_preparation.py + dataset prêt pour le ML
 
 
 
-#### 4\. Machine Learning Modeling :
+#### 4\. Machine Learning Modeling ==> NEIL \& WENDY
 
 
 
-* Concevoir, entraîner et évaluer un modèle capable de prédire la fraude (1 = fraude, 0 = normal). | Choisir un modèle (LightGBM, XGBoost, Logistic Regression)
+* Concevoir, entraîner et évaluer un modèle capable de prédire la fraude (1 = fraude, 0 = normal).
+* Choisir un modèle (LightGBM, XGBoost, Logistic Regression)
 * Gérer le déséquilibre des classes (~0.15%)
 * Valider avec un split temporel et cold-start client
 * Calculer AUROC, AUPRC, F1-score
@@ -50,7 +52,7 @@ Explorer les fichiers (transactions\_train.csv, cards\_data.csv, users\_data.csv
 
 
 
-#### 5\. Evaluation \& Generalization
+#### 5\. Evaluation \& Generalization ==> NEIL \& WENDY
 
 
 
@@ -62,7 +64,7 @@ Explorer les fichiers (transactions\_train.csv, cards\_data.csv, users\_data.csv
 
 
 
-#### 6\. Data Visualization \& Dashboard
+#### 6\. Data Visualization \& Dashboard ==> SAFA
 
 
 
@@ -74,7 +76,7 @@ Explorer les fichiers (transactions\_train.csv, cards\_data.csv, users\_data.csv
 
 
 
-#### 7\. Génération du fichier de soumission
+#### 7\. Génération du fichier de soumission ==> CYPRIEN
 
 
 
@@ -88,7 +90,7 @@ transaction\_id, fraud\_prediction
 
 
 
-8\. Documentation \& Présentation finale 
+#### 8\. Documentation \& Présentation finale ==> TOUS
 
 
 
