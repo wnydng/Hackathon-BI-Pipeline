@@ -41,7 +41,7 @@ Notre approche suit les étapes classiques d’un pipeline **Data Science** :
 2. **Préparation et Feature Engineering**  
 3. **Modélisation (LightGBM)**  
 4. **Évaluation & Généralisation**  
-5. **Visualisation des résultats (Dashboard Streamlit)**  
+5. **Visualisation des résultats (Dashboard Power BI)**  
 6. **Soumission finale (`submission.csv`)**
 
 ---
@@ -75,6 +75,7 @@ Notre approche suit les étapes classiques d’un pipeline **Data Science** :
 ---
 
 ## 🗂️ Structure du projet
+```
 finance-fraud/
 ├─ data/ # Données brutes (non versionnées)
 ├─ notebooks/ # Explorations et analyses
@@ -92,7 +93,7 @@ finance-fraud/
 │ ├─ figs/ # Graphiques
 │ └─ submission/ # Fichier final de prédiction
 └─ README.md
-
+```
 
 ---
 
