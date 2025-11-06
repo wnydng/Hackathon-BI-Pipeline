@@ -1,111 +1,161 @@
-# 💳 WatsonIA – Détection de fraudes bancaires
+# WatsonIA – Banking Fraud Detection
 
-## Equipe 20 :
-- Lisa Naccache (DIA 4) : Chef d'équipe
-- Hiba NEJJARI (DIA 4)
-- Neil MAHCER (DIA 4)
-- Wendy DUONG (DIA 4)
-- Cyprien MOUTON (DIA 4)
-- Safa HORMI BOUAICHI (DIA 3)
-
-
-## 🧠 Contexte du projet
-Dans un contexte de forte digitalisation des paiements, les fraudes bancaires se multiplient et deviennent de plus en plus sophistiquées.  
-Ce projet a été réalisé dans le cadre du **Hackathon IBM – Track Finance**, et a pour but de concevoir un modèle de **Machine Learning** capable de détecter automatiquement les transactions frauduleuses à partir d’un dataset réaliste fourni par IBM (2016–2018).
+## Team 20
+- Lisa Naccache (DIA 4): Team Leader  
+- Hiba NEJJARI (DIA 4)  
+- Neil MAHCER (DIA 4)  
+- Wendy DUONG (DIA 4)  
+- Cyprien MOUTON (DIA 4)  
+- Safa HORMI BOUAICHI (DIA 3)  
 
 ---
 
-## 🎯 Objectif
-Développer un modèle d’**Intelligence Artificielle** permettant de prédire si une transaction est :
-- `1` → **Frauduleuse**  
-- `0` → **Non frauduleuse**
+## Repository Overview
 
-Le modèle doit être **robuste**, **généralisable à de nouveaux clients (cold start)** et résilient face à un fort **déséquilibre de classes (~0.15 % de fraudes)**.
+This repository contains all the materials for the **WatsonIA – Banking Fraud Detection** project, developed for the **IBM Hackathon – Finance Track**.
 
----
+### Quick Access
+- **Code:** [Code/](./Code)
+  - [2_EDA.ipynb](./Code/2_EDA.ipynb) – Exploratory Data Analysis  
+  - [3_DataCleaning_and_DataPreparation.ipynb](./Code/3_DataCleaning_and_DataPreparation.ipynb) – Data Cleaning and Preparation  
+  - [4_5_Machine_Learning_Modeling.ipynb](./Code/4_5_Machine_Learning_Modeling.ipynb) – Machine Learning and Model Training  
+  - [import.txt](./Code/import.txt) – Dependencies list  
 
-## 🧩 Données
-Données fournies par IBM :
-- `transactions_train.csv` : Transactions d'entraînement (montant, date, carte, etc.)  
-- `train_fraud_labels.json` : Labels de fraude (1 ou 0)  
-- `cards_data.csv` : Informations sur les cartes de paiement  
-- `users_data.csv` : Profils utilisateurs (âge, revenus, localisation, etc.)  
-- `mcc_codes.json` : Codes MCC (types de marchands)  
-- `evaluation_features.csv` : Données d’évaluation (sans label)
+- **Data:** [Data/](./Data) – Contains the raw and processed datasets (not versioned in GitHub).
 
----
+- **Documentation:** [Docs/](./Docs)
+  - [ESILV Hackathon Use Cases.pdf](./Docs/ESILV%20Hackathon%20Use%20Cases.pdf)  
+  - [Introduction_Context.pdf](./Docs/Introduction_Context.pdf)  
+  - [Kickoff.pdf](./Docs/Kickoff.pdf)
 
-## 🚀 Méthodologie
-Notre approche suit les étapes classiques d’un pipeline **Data Science** :
-1. **Exploration des données (EDA)**  
-2. **Préparation et Feature Engineering**  
-3. **Modélisation (LightGBM)**  
-4. **Évaluation & Généralisation**  
-5. **Visualisation des résultats (Dashboard Power BI)**  
-6. **Soumission finale (`submission.csv`)**
+- **Project Management:** [Management/tasks.md](./Management/tasks.md) – Task tracking and team responsibilities.
+
+- **Certificates:** [certificates/](./certificates) – Hackathon participation and completion certificates.
+
+- **Git Guide:** [GIT_PULL_PUSH_GUIDE.md](./GIT%20PULL%20PUSH%20GUIDE.md) – Instructions for pushing and pulling updates.
+
+- **Main Project Summary:** [README.md](./README.md) – This file.
 
 ---
 
-## 👥 Équipe WatsonIA
-| Rôle | Membres |
+## Project Context
+
+With the rapid digitalization of payments, banking frauds have become increasingly frequent and sophisticated.  
+This project was carried out as part of the **IBM Hackathon – Finance Track**, with the goal of developing a **Machine Learning model** capable of automatically detecting fraudulent transactions from a realistic dataset provided by IBM (2016–2018).
+
+---
+
+## Objective
+
+Develop an **Artificial Intelligence model** that predicts whether a transaction is:
+- `1` → Fraudulent  
+- `0` → Non-fraudulent  
+
+The model must be robust, generalizable to new clients (cold start), and resilient to a high class imbalance (~0.15% of fraud).
+
+---
+
+## Data
+
+Data provided by IBM:
+- `transactions_train.csv`: Training transactions (amount, date, card, etc.)  
+- `train_fraud_labels.json`: Fraud labels (1 or 0)  
+- `cards_data.csv`: Payment card information  
+- `users_data.csv`: User profiles (age, income, location, etc.)  
+- `mcc_codes.json`: MCC codes (merchant categories)  
+- `evaluation_features.csv`: Evaluation data (without labels)
+
+---
+
+## Methodology
+
+Our approach follows the standard **Data Science pipeline**:
+1. Exploratory Data Analysis (EDA)  
+2. Data Preparation and Feature Engineering  
+3. Modeling (LightGBM)  
+4. Evaluation and Generalization  
+5. Visualization of Results (Power BI Dashboard)  
+6. Final Submission (`submission.csv`)
+
+---
+
+## Team Roles
+
+| Role | Members |
 |:------|:---------|
-| 🧭 Introduction & Contexte | **Lisa & Cyprien** |
-| 🔍 Data Exploration | **Hiba** |
-| ⚙️ Data Preparation | **Hiba & Lisa & Safa** |
-| 🤖 Machine Learning | **Neil & Wendy** |
-| 📈 Évaluation & Généralisation | **Neil & Wendy** |
-| 📊 Dashboard & Visualisation | **Safa** |
-| 📁 Soumission finale | **Cyprien** |
-| 📝 Rapport & Présentation | **Tous** |
+| Introduction & Context | Lisa & Cyprien |
+| Data Exploration | Hiba |
+| Data Preparation | Hiba, Lisa & Safa |
+| Machine Learning | Neil & Wendy |
+| Evaluation & Generalization | Neil & Wendy |
+| Dashboard & Visualization (Power BI) | Safa |
+| Final Submission | Cyprien |
+| Report & Presentation | All Members |
 
 ---
 
-## 🛠️ Technologies utilisées
-- **Langage :** Python 3.10  
-- **Librairies principales :**
-  - `pandas`, `numpy` – manipulation de données  
-  - `lightgbm`, `scikit-learn` – modélisation et métriques  
-  - `matplotlib`, `seaborn` – visualisation  
-  - `streamlit` – dashboard interactif
-- **Outils :**
+## Technologies Used
+
+- **Language:** Python 3.10  
+- **Main Libraries:**
+  - `pandas`, `numpy` – Data manipulation  
+  - `lightgbm`, `scikit-learn` – Modeling and metrics  
+  - `matplotlib`, `seaborn` – Visualization  
+- **Tools:**
   - Jupyter Notebook  
+  - Power BI – Dashboard and data visualization  
+  - IBM Watsonx – Code execution and model experimentation  
   - Git & GitHub  
-  - Power BI
 
 ---
 
-## 🗂️ Structure du projet
+## Project Structure
+
 ```
 finance-fraud/
-├─ data/ # Données brutes (non versionnées)
-├─ notebooks/ # Explorations et analyses
-├─ src/
-│ ├─ data.py # Chargement et nettoyage
-│ ├─ features.py # Feature engineering
-│ ├─ split.py # Découpage temporel / cold start
-│ ├─ model.py # Entraînement du modèle
-│ ├─ metrics.py # Calcul des métriques
-│ └─ infer.py # Génération du fichier submission.csv
-├─ dashboard/
-│ └─ streamlit_app.py # Dashboard des résultats
-├─ outputs/
-│ ├─ models/ # Modèles sauvegardés
-│ ├─ figs/ # Graphiques
-│ └─ submission/ # Fichier final de prédiction
-└─ README.md
+├─ Code/                     # Jupyter notebooks for each stage
+│  ├─ 2_EDA.ipynb
+│  ├─ 3_DataCleaning_and_DataPreparation.ipynb
+│  ├─ 4_5_Machine_Learning_Modeling.ipynb
+│  └─ import.txt
+│
+├─ Data/                     # Datasets (not versioned)
+│
+├─ Docs/                     # Documentation and reports
+│  ├─ ESILV Hackathon Use Cases.pdf
+│  ├─ Introduction_Context.pdf
+│  └─ Kickoff.pdf
+│
+├─ Management/
+│  └─ tasks.md               # Task management and assignments
+│
+├─ certificates/             # Hackathon certificates
+│
+├─ GIT_PULL_PUSH_GUIDE.md    # Git usage instructions
+└─ README.md                 # Project overview
 ```
 
 ---
 
-## ▶️ Exécution rapide
+## Quick Start
+
 ```bash
-# 1. Installer les dépendances
+# 1. Install dependencies
 pip install -r requirements.txt
 
-# 2. Lancer le notebook d’entraînement
-jupyter notebook notebooks/
+# 2. Launch the training notebooks
+jupyter notebook Code/
 
-# 3. Générer les prédictions
+# 3. Generate predictions
+# (inside the appropriate notebook cell or with your script)
+python src/infer.py
 
+# 4. View results and visualizations in Power BI
+# (open dashboard/powerbi_dashboard.pbix)
+```
 
-# 4. Lancer le dashboard
+---
+
+## IBM Watsonx Integration
+
+The project code and models are also available and executable on **IBM Watsonx**, which was used for model training, testing, and evaluation within the IBM cloud environment.
