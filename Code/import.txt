@@ -16,3 +16,11 @@ import lightgbm as lgb
 from imblearn.ensemble import EasyEnsembleClassifier
 import joblib
 import numpy as np
+
+EDA :
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+import folium
+from IPython.display import display, Markdown
+
+import warnings
