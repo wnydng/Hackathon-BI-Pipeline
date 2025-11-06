@@ -51,7 +51,7 @@ Notre approche suit les étapes classiques d’un pipeline **Data Science** :
 |:------|:---------|
 | 🧭 Introduction & Contexte | **Lisa & Cyprien** |
 | 🔍 Data Exploration | **Hiba** |
-| ⚙️ Data Preparation | **Hiba & Lisa** |
+| ⚙️ Data Preparation | **Hiba & Lisa & Safa** |
 | 🤖 Machine Learning | **Neil & Wendy** |
 | 📈 Évaluation & Généralisation | **Neil & Wendy** |
 | 📊 Dashboard & Visualisation | **Safa** |
