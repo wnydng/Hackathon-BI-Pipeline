@@ -18,10 +18,11 @@ This repository contains all the materials for the **WatsonIA – Banking Fraud 
 - **Code:** [Code/](./Code)
   - [2_EDA.ipynb](./Code/2_EDA.ipynb) – Exploratory Data Analysis  
   - [3_DataCleaning_and_DataPreparation.ipynb](./Code/3_DataCleaning_and_DataPreparation.ipynb) – Data Cleaning and Preparation  
-  - [4_5_Machine_Learning_Modeling.ipynb](./Code/4_5_Machine_Learning_Modeling.ipynb) – Machine Learning and Model Training  
+  - [4_5_Machine_Learning_Modeling.ipynb](./Code/4_5_Machine_Learning_Modeling.ipynb) – **(Temporary)** Machine Learning and Model Training; contains the code for the **submission file**.  
+  - [Machine_Learning_Modeling_v2.ipynb](./Code/Machine_Learning_Modeling_v2.ipynb) – **Cold start and standard version** of the machine learning workflow.  
   - [import.txt](./Code/import.txt) – Dependencies list  
 
-- **Data:** [Data/](./Data) – Contains the raw and processed datasets (not versioned in GitHub).
+- **Data:** [Data/](./Data) – Contains the raw and processed datasets as well as the submission file.
 
 - **Documentation:** [Docs/](./Docs)
   - [ESILV Hackathon Use Cases.pdf](./Docs/ESILV%20Hackathon%20Use%20Cases.pdf)  
@@ -35,6 +36,7 @@ This repository contains all the materials for the **WatsonIA – Banking Fraud 
 - **Git Guide:** [GIT_PULL_PUSH_GUIDE.md](./GIT%20PULL%20PUSH%20GUIDE.md) – Instructions for pushing and pulling updates.
 
 - **Main Project Summary:** [README.md](./README.md) – This file.
+
 
 ---
 
@@ -62,8 +64,12 @@ Data provided by IBM:
 - `train_fraud_labels.json`: Fraud labels (1 or 0)  
 - `cards_data.csv`: Payment card information  
 - `users_data.csv`: User profiles (age, income, location, etc.)  
-- `mcc_codes.json`: MCC codes (merchant categories)  
-- `evaluation_features.csv`: Evaluation data (without labels)
+- `mcc_codes.json`: MCC codes (merchant categories)
+- **final_dataset_FE.zip : Dataset after Feature Engineering that we use for training the models** ( zipped because it is too large for github)
+- `Final Submission/fraud_predictions_final.csv`: Evaluation data (without labels) the submission file after training the model.
+
+  <img width="539" height="602" alt="image" src="https://github.com/user-attachments/assets/b14c906f-78bb-4453-b3cd-5794281d4312" />
+
 
 ---
 
@@ -109,53 +115,4 @@ Our approach follows the standard **Data Science pipeline**:
 
 ---
 
-## Project Structure
-
-```
-finance-fraud/
-├─ Code/                     # Jupyter notebooks for each stage
-│  ├─ 2_EDA.ipynb
-│  ├─ 3_DataCleaning_and_DataPreparation.ipynb
-│  ├─ 4_5_Machine_Learning_Modeling.ipynb
-│  └─ import.txt
-│
-├─ Data/                     # Datasets (not versioned)
-│
-├─ Docs/                     # Documentation and reports
-│  ├─ ESILV Hackathon Use Cases.pdf
-│  ├─ Introduction_Context.pdf
-│  └─ Kickoff.pdf
-│
-├─ Management/
-│  └─ tasks.md               # Task management and assignments
-│
-├─ certificates/             # Hackathon certificates
-│
-├─ GIT_PULL_PUSH_GUIDE.md    # Git usage instructions
-└─ README.md                 # Project overview
-```
-
----
-
-## Quick Start
-
-```bash
-# 1. Install dependencies
-pip install -r requirements.txt
-
-# 2. Launch the training notebooks
-jupyter notebook Code/
-
-# 3. Generate predictions
-# (inside the appropriate notebook cell or with your script)
-python src/infer.py
-
-# 4. View results and visualizations in Power BI
-# (open dashboard/powerbi_dashboard.pbix)
-```
-
----
-
-## IBM Watsonx Integration
-
-The project code and models are also available and executable on **IBM Watsonx**, which was used for model training, testing, and evaluation within the IBM cloud environment.
+-> **IBM Watsonx** was used for model training, testing, and evaluation within the IBM cloud environment.
