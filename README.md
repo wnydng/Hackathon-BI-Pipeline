@@ -1,4 +1,6 @@
-# WatsonIA – Banking Fraud Detection
+# Track Finance
+
+# Detection of Fraudulent Bank Transactions
 
 ## Team 20
 - Lisa Naccache (DIA 4): Team Leader  
