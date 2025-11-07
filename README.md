@@ -65,8 +65,10 @@ Data provided by IBM:
 - `transactions_train.csv`: Training transactions (amount, date, card, etc.)  
 - `train_fraud_labels.json`: Fraud labels (1 or 0)  
 - `cards_data.csv`: Payment card information  
-- `users_data.csv`: User profiles (age, income, location, etc.)  
+- `users_data.csv`: User profiles (age, income, location, etc.)
 - `mcc_codes.json`: MCC codes (merchant categories)
+
+Data after modification:
 - **final_dataset_FE.zip : Dataset after Feature Engineering that we use for training the models** ( zipped because it is too large for github)
 - `Final Submission/fraud_predictions_final.csv`: Evaluation data (without labels) the submission file after training the model.
 
