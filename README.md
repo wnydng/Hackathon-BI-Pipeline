@@ -20,7 +20,7 @@ This repository contains all the materials for the **WatsonIA – Banking Fraud 
 - **Code:** [Code/](./Code)
   - [2_EDA.ipynb](./Code/2_EDA.ipynb) – Exploratory Data Analysis  
   - [3_DataCleaning_and_DataPreparation.ipynb](./Code/3_DataCleaning_and_DataPreparation.ipynb) – Data Cleaning and Preparation  
-  - [4_5_Machine_Learning_Modeling.ipynb](./Code/4_5_Machine_Learning_Modeling.ipynb) – **(Temporary)** Machine Learning and Model Training; contains the code for the **submission file**.  
+  - [4_5_Machine_Learning_Modeling.ipynb](./Code/4-5_Machine_Learning_Modeling.ipynb) – **(Temporary)** Machine Learning and Model Training; contains the code for the **submission file**.  
   - [Machine_Learning_Modeling_v2.ipynb](./Code/4.Machine_Learning_Modeling.ipynb) – **Cold start and standard version** of the machine learning workflow.  
   - [import.txt](./Code/import.txt) – Dependencies list  
 
