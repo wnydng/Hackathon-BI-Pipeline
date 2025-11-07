@@ -30,6 +30,8 @@ This repository contains all the materials for the **WatsonIA – Banking Fraud 
   - [ESILV Hackathon Use Cases.pdf](./Docs/ESILV%20Hackathon%20Use%20Cases.pdf)  
   - [Introduction_Context.pdf](./Docs/Introduction_Context.pdf)  
   - [Kickoff.pdf](./Docs/Kickoff.pdf)
+  - [Prez IBM.pdf](./Docs/PREZ IBM.pdf) **PDF DE PRESENTATION**
+  Lien du canva : https://www.canva.com/design/DAG317at_8w/Naij3IgkLQM2boZExbH4yw/edit?utm_content=DAG317at_8w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 - **Project Management:** [Management/tasks.md](./Management/tasks.md) – Task tracking and team responsibilities.
 
